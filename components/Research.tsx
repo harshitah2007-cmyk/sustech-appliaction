@@ -8,9 +8,9 @@ const Research: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-lavender font-bold tracking-widest uppercase text-sm mb-3">Innovation</h2>
-          <h3 className="text-4xl font-bold text-slate-900 mb-4 serif">Engineering & Design</h3>
+          <h3 className="text-4xl font-bold text-slate-900 mb-4 serif">Practical Engineering & Design</h3>
           <p className="text-slate-500 max-w-2xl mx-auto">
-            A showcase of my journey from self-taught coding to functional device prototyping.
+            Hands-on projects where I applied coding, hardware integration, and artistic precision to solve real-world problems.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Research: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent opacity-60"></div>
                 {project.id === 'p1' && (
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[10px] font-black uppercase text-purple-600 shadow-sm">
-                    Featured Project
+                    Key Achievement
                   </div>
                 )}
               </div>
@@ -39,14 +39,10 @@ const Research: React.FC = () => {
                   ))}
                 </div>
                 <h4 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-lavender transition-colors serif">{project.title}</h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   {project.description}
                 </p>
-                <div className="mt-auto">
-                  <button className="text-lavender text-sm font-bold flex items-center hover:translate-x-2 transition-transform">
-                    View My Process <span className="ml-2">→</span>
-                  </button>
-                </div>
+                {/* "View My Process" button removed as requested */}
               </div>
             </div>
           ))}
